@@ -1,0 +1,1666 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- UTF-8 -->
+    <meta charset="UTF-8" />
+    <!-- noindex -->
+    <meta name="robots" content="noindex" />
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title -->
+    <title>SUISOPOT</title>
+    <!-- description -->
+    <meta name="description" content="SUISOPOTについて" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Yomogi&display=swap"
+      rel="stylesheet"
+    />
+    <!-- scroll-hint -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css"
+    />
+    <!-- swiper  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <!-- reset -->
+    <link rel="stylesheet" href="./css/destyle.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="header__inner inner">
+        <h1 class="header__logo">
+          <a href="#"><img src="./img/header-logo.png" alt="" /></a>
+        </h1>
+        <nav class="header__nav">
+          <a href="#" class="header__link">特長</a>
+          <a href="#" class="header__link">お客様の声</a>
+          <a href="#" class="header__link">ご利用料金</a>
+          <a href="#" class="header__link">ご利用までの流れ</a>
+          <a href="#" class="header__link">よくある質問</a>
+        </nav>
+        <div class="header__tel">
+          <span class="header__tel-main">03-1234-5678</span>
+          <span class="header__tel-sub">平日受付 9:00-17:00(祝日を除く)</span>
+        </div>
+        <div class="header__btn header__btn1">
+          <a href="#">資料請求</a>
+        </div>
+        <div class="header__btn header__btn2">
+          <a href="#">新規お申込</a>
+        </div>
+        <div class="header__btn-sp">
+          <a href="#">新規お申込</a>
+        </div>
+        <button id="js-drawer-icon" class="header__open drawer-icon">
+          <span class="drawer-icon__bar"></span>
+          <span class="drawer-icon__bar"></span>
+          <span class="drawer-icon__bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <div id="js-drawer-content" class="drawer-content">
+      <nav class="drawer-content__menu">
+        <a href="#" class="drawer-content__link">特長</a>
+        <a href="#" class="drawer-content__link">お客様の声</a>
+        <a href="#" class="drawer-content__link">ご利用料金</a>
+        <a href="#" class="drawer-content__link">ご利用までの流れ</a>
+        <a href="#" class="drawer-content__link">よくある質問</a>
+        <a href="#" class="drawer-content__link"></a>
+      </nav>
+      <div class="drawer__tel">
+        <span class="drawer__tel-main">03-1234-5678</span>
+        <span class="drawer__tel-sub">平日受付 9:00-17:00(祝日を除く)</span>
+      </div>
+      <div class="drawer__btns">
+        <div class="drawer__btn drawer__btn1">
+          <a href="#">資料請求</a>
+        </div>
+        <div class="drawer__btn drawer__btn2">
+          <a href="#">新規お申込</a>
+        </div>
+      </div>
+    </div>
+    <div class="drawer-bg"></div>
+
+    <!-- fv -->
+    <div class="fv">
+      <picture>
+        <source srcset="./img/fv-bg.png" media="(min-width: 900px)" />
+        <img src="./img/sp/fv-bg.png" alt="" />
+      </picture>
+    </div>
+
+    <!-- cta -->
+    <div class="cta">
+      <picture class="cta__img">
+        <source srcset="./img/cta-img.png" media="(min-width: 900px)" />
+        <img src="./img/sp/cta-img.png" alt="" />
+      </picture>
+    </div>
+
+    <!-- problem -->
+    <section class="problem">
+      <div class="problem__inner">
+        <h3 class="problem__title">こんなお悩みありませんか?</h3>
+        <div class="problem__wrapper">
+          <div class="problem__left">
+            <img src="./img/problem-img.png" loading="lazy" alt="" />
+          </div>
+          <div class="problem__left-sp">
+            <img src="./img/sp/problem-img.png" loading="lazy" alt="" />
+          </div>
+          <div class="problem__right">
+            <ul class="problem__list">
+              <li class="problem__item">手軽に健康を手に入れたい</li>
+              <li class="problem__item">そろそろお水にもこだわりたい</li>
+              <li class="problem__item problem__item2">
+                腸活何からしたら良いか<br class="pc-hidden" />わからない
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="problem__bottom">
+          <p class="problem__text">それに、活性酸素が増えると、様々な影響が…</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- solution -->
+    <section class="solution">
+      <div class="solution__inner">
+        <h2 class="solution__head-title">
+          <span class="solution__title-main">そんなお悩みや心配は</span
+          ><br class="pc-hidden" />
+
+          <div class="solution__title-img">
+            <img src="./img/header-logo.png" loading="lazy" alt="" />
+          </div>
+          <span class="solution__title-main">が解決します</span>
+        </h2>
+        <h2 class="solution__head-title-sp">
+          <span class="solution__title-main-sp">そんなお悩みや心配は</span
+          ><br class="pc-hidden" />
+          <div class="solution__title-sp">
+            <div class="solution__title-img-sp">
+              <img src="./img/header-logo.png" loading="lazy" alt="" />
+            </div>
+            <span class="solution__title-main-sp">が解決します</span>
+          </div>
+        </h2>
+        <p class="solution__lead">
+          SUISOPOTは手軽にナノバブル水素水を<br
+            class="pc-hidden"
+          />作れるサーバーです
+        </p>
+        <div class="solution__point-items">
+          <div class="solution__point-item">
+            <img src="./img/solution__point-item1.png" loading="lazy" alt="" />
+          </div>
+          <div class="solution__point-item">
+            <img src="./img/solution__point-item2.png" loading="lazy" alt="" />
+          </div>
+          <div class="solution__point-item">
+            <img src="./img/solution__point-item3.png" loading="lazy" alt="" />
+          </div>
+        </div>
+        <div class="solution__wrapper">
+          <h3 class="solution__title">
+            そもそも、<br class="pc-hidden" />ナノバブル水素水って？
+          </h3>
+          <!-- 左の吹き出し -->
+          <div class="balloon-chat left">
+            <figure class="icon-img">
+              <img src="./img/solition-icon1.png" alt="" />
+            </figure>
+            <div class="chatting">
+              <p class="chat-text">
+                ナノバブル水素水について説明します！<br />
+                まず、水素は、<span>悪玉な活性酸素を消去する抗酸化作用</span>があります！<br />
+                だから、日々の健康に役立てる事ができるんです！<br />
+                しかも、様々な病気の治療への利用が始まっています！
+              </p>
+            </div>
+          </div>
+          <!-- 右の吹き出し -->
+          <div class="balloon-chat right">
+            <figure class="icon-img icon-img2">
+              <img src="./img/solition-icon2.png" alt="" />
+            </figure>
+            <div class="chatting chatting2">
+              <p class="chat-text">
+                なるほど！だから近年水素ブームが来ているんですね！
+              </p>
+            </div>
+          </div>
+          <!-- 左の吹き出し -->
+          <div class="balloon-chat left">
+            <figure class="icon-img icon-img3">
+              <img src="./img/solition-icon1.png" alt="" />
+            </figure>
+            <div class="chatting chatting3">
+              <p class="chat-text">
+                それから、ナノバブルというのは、こんなに小さな泡の事です！
+              </p>
+            </div>
+          </div>
+          <div class="solution__image">
+            <picture class="solution__img">
+              <source
+                srcset="./img/solution-img.png"
+                media="(min-width: 900px)"
+              />
+              <img src="./img/sp/solution-img.png" alt="" />
+            </picture>
+          </div>
+          <!-- 左の吹き出し -->
+          <div class="balloon-chat left">
+            <div class="chatting chatting4">
+              <p class="chat-text">この泡のスゴイ所は浸透力と持続力！</p>
+            </div>
+          </div>
+          <!-- 左の吹き出し -->
+          <div class="balloon-chat left">
+            <div class="chatting chatting5">
+              <p class="chat-text">
+                「ナノバブル水素水」には、この泡が1ccあたり3億3,000万個という高濃度のナノバブルを含んでいます。<br />
+                <span>大量のナノバブルが素早く体内に水素と酸素を浸透させる</span
+                >事ができるんです！
+              </p>
+            </div>
+          </div>
+          <!-- 右の吹き出し -->
+          <div class="balloon-chat right">
+            <figure class="icon-img icon-img2">
+              <img src="./img/solition-icon2.png" alt="" />
+            </figure>
+            <div class="chatting chatting2">
+              <p class="chat-text">
+                ナノバブルって凄い！普通の水素水とは全然違うのね！
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- point -->
+    <section class="point">
+      <div class="point__inner inner">
+        <h2 class="point__head-title">
+          ナノバブル水素水って<br class="pc-hidden" />何が良いの？
+        </h2>
+        <div class="point__wrapper point__wrapper1">
+          <div class="point__img-sp">
+            <img src="./img/point_num1.png" loading="lazy" alt="" />
+          </div>
+          <div class="point__left">
+            <img src="./img/point-img1.png" loading="lazy" alt="" />
+          </div>
+          <div class="point__right">
+            <div class="point__img">
+              <img src="./img/point_num1.png" loading="lazy" alt="" />
+            </div>
+            <h3 class="point__title">ナノバブル水素で長期間活性酸素を抑える</h3>
+            <p class="point__text">
+              「ナノバブル水素水」は、1ccあたり3億3,000万個という高濃度のナノバブルを含んでいます。この微細な泡は、水素を長期間保持し、体内に浸透させることができます。長期間酸化を抑えることができるので、近年注目度が高まっています。
+            </p>
+          </div>
+        </div>
+        <div class="point__wrapper point__wrapper2">
+          <div class="point__img-sp">
+            <img src="./img/point_num2.png" loading="lazy" alt="" />
+          </div>
+          <div class="point__left2">
+            <img src="./img/point-img2.png" loading="lazy" alt="" />
+          </div>
+          <div class="point__right">
+            <div class="point__img">
+              <img src="./img/point_num2.png" loading="lazy" alt="" />
+            </div>
+            <h3 class="point__title">腸内に働きかける</h3>
+            <p class="point__text">
+              ヒトフローラマウスを用いた共同研究の試験では、腸内のビフィズス菌が増加、悪玉菌が減少した結果となりました。<br />
+              <span>(15日間ナノバブル水素水を飲水させた試験)</span>
+            </p>
+          </div>
+        </div>
+        <div class="point__wrapper point__wrapper3">
+          <div class="point__img-sp">
+            <img src="./img/point_num3.png" loading="lazy" alt="" />
+          </div>
+          <div class="point__left">
+            <img src="./img/point-img3.png" loading="lazy" alt="" />
+          </div>
+          <div class="point__right">
+            <div class="point__img">
+              <img src="./img/point_num3.png" loading="lazy" alt="" />
+            </div>
+            <h3 class="point__title">フィルター不要で93％の塩素を除去</h3>
+            <p class="point__text">
+              塩素を93％も除去することができ、水道水を美味しく健康的なナノバブル水素水に生まれ変わらせます。<br />
+              <span
+                >（SUISOPOTで120分間、電気分解した場合）<br />
+                ※日本食品分析センターでの試験結果。</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="point__wrapper point__wrapper4">
+          <div class="point__img-sp">
+            <img src="./img/point_num4.png" loading="lazy" alt="" />
+          </div>
+          <div class="point__left point__left4">
+            <img src="./img/point-img4.png" loading="lazy" alt="" />
+          </div>
+          <div class="point__right point__right4">
+            <div class="point__img">
+              <img src="./img/point_num4.png" loading="lazy" alt="" />
+            </div>
+            <h3 class="point__title">ミネラル豊富な水</h3>
+            <p class="point__text">
+              SUISOPOT(スイソポット）に付属のミネラルプレートが生み出す、豊富なイオン化されたミネラル成分が溶け出すことにより、マグネシウムや亜鉛を含んだ味わい豊かなおいしいお水をつくりだすことができます。<br />
+              <span
+                >※マグネシウム1.76倍、亜鉛1.25倍。<br />
+                日本食品分析センターでの試験結果。</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="point__wrapper point__wrapper5">
+          <div class="point__img-sp">
+            <img src="./img/point_num5.png" loading="lazy" alt="" />
+          </div>
+          <div class="point__left point__left5">
+            <img src="./img/point-img5.png" loading="lazy" alt="" />
+          </div>
+          <div class="point__right">
+            <div class="point__img">
+              <img src="./img/point_num5.png" loading="lazy" alt="" />
+            </div>
+            <h3 class="point__title">身体への負担が少ない中性水</h3>
+            <p class="point__text">
+              一般的な水素水は、アルカリ性に傾いているものがほとんどです。アルカリ性の水素水もメリットはございますが、中性のお水の方が身体への負担は少ないと考えられており、ｐHの偏りを気にすることなくご飲用いただけます。
+            </p>
+          </div>
+        </div>
+        <div class="point__wrapper point__wrapper6">
+          <div class="point__img-sp">
+            <img src="./img/point_num6.png" loading="lazy" alt="" />
+          </div>
+          <div class="point__left point__left6">
+            <img src="./img/point-img6.png" loading="lazy" alt="" />
+          </div>
+          <div class="point__right">
+            <div class="point__img">
+              <img src="./img/point_num6.png" loading="lazy" alt="" />
+            </div>
+            <h3 class="point__title">お肌に優しいので洗顔にもオススメ</h3>
+            <p class="point__text">
+              水に溶け込んだ無数の小さな泡が、お肌の角質の奥にまで入り込んでキレイにしてくれます。さっと洗い流すだけですっきりとした透明肌へと導いてくれます。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cta2 -->
+    <picture class="cta2-bg">
+      <source srcset="./img/cta2-bg.png" media="(min-width: 900px)" />
+      <img src="./img/sp/cta2-bg.png" alt="" />
+    </picture>
+
+    <section class="cta2">
+      <div class="cta2__inner">
+        <h2 class="cta2__title">
+          さっそく<span>ナノバブル水素水</span>の<br
+            class="pc-hidden"
+          />ある生活を始めてみましょう
+        </h2>
+        <div class="cta2__wrapper">
+          <div class="cta2__left">
+            <p class="cta2__text">簡単入力３分で完了！</p>
+            <div class="cta2__btn">
+              <a href="#"><span>無料</span>で<span>資料請求</span>をする</a>
+            </div>
+          </div>
+          <div class="cta2__right">
+            <p class="cta2__text">最短翌日発送！</p>
+            <div class="cta2__btn">
+              <a href="#">新規お申込</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- room -->
+    <section class="room">
+      <div class="room__inner">
+        <h2 class="section__title">どんなお部屋にもピッタリ</h2>
+        <p class="room__text">
+          ホワイトとシルバーを基調にしたデザイン<br class="pc-hidden" />
+          ＆コンパクトサイズ<br />
+          どんなインテリアにも馴染むシンプルなデザイン
+        </p>
+        <div class="room__items swiper" id="js-slider-swiper0">
+          <div class="swiper-wrapper">
+            <div class="room__item swiper-slide swiper-slide2">
+              <img src="./img/room-img1.png" loading="lazy" alt="" />
+            </div>
+            <div class="room__item swiper-slide swiper-slide2">
+              <img src="./img/room-img2.png" loading="lazy" alt="" />
+            </div>
+            <div class="room__item swiper-slide swiper-slide2">
+              <img src="./img/room-img3.png" loading="lazy" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- slider -->
+    <section class="slider">
+      <div class="slider__inner">
+        <h2 class="section__title">使い方はいろいろ</h2>
+        <p class="slider__lead">
+          健康的な生活のための飲用水としてはもちろん、お茶やお料理にもお使いいただけます。<br />
+          さらに、ペットの飲用水、植物の水やり、お肌を整えるための洗顔など、<br
+            class="sp-hidden"
+          />
+          ライフスタイルに合わせて、幅広く活用ができます。
+        </p>
+        <div class="slider__slider">
+          <div id="js-slider-swiper1" class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider-card">
+                  <div class="slider-card__img">
+                    <img src="./img/slider-card__img1.png" alt="" />
+                  </div>
+                  <h3 class="slider__title">お茶やコーヒー</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-card">
+                  <div class="slider-card__img">
+                    <img src="./img/slider-card__img2.png" alt="" />
+                  </div>
+                  <h3 class="slider__title">野菜の洗浄</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-card">
+                  <div class="slider-card__img">
+                    <img src="./img/slider-card__img3.png" alt="" />
+                  </div>
+                  <h3 class="slider__title">植物の水やり</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-card">
+                  <div class="slider-card__img">
+                    <img src="./img/slider-card__img4.png" alt="" />
+                  </div>
+                  <h3 class="slider__title">ペットの飲用水</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-card">
+                  <div class="slider-card__img">
+                    <img src="./img/slider-card__img5.png" alt="" />
+                  </div>
+                  <h3 class="slider__title">洗顔</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-card">
+                  <div class="slider-card__img">
+                    <img src="./img/slider-card__img6.png" alt="" />
+                  </div>
+                  <h3 class="slider__title">お料理</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-card">
+                  <div class="slider-card__img">
+                    <img src="./img/slider-card__img7.png" alt="" />
+                  </div>
+                  <h3 class="slider__title">お酒の割り水</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper__btn">
+            <div
+              id="js-slider-pagination"
+              class="swiper-pagination slider__pagination"
+            ></div>
+            <div
+              id="js-slider-prev1"
+              class="swiper-button-prev slider__prev"
+            ></div>
+            <div
+              id="js-slider-next1"
+              class="swiper-button-next slider__next"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- reason -->
+    <section class="reason">
+      <div class="reason__inner">
+        <h2 class="section__title-pc">SUISOPOTがオススメな理由</h2>
+        <h2 class="section__title-sp">SUIREX5がオススメな理由</h2>
+        <div class="reason__items">
+          <div class="reason__item">
+            <picture>
+              <source
+                srcset="./img/reason__img1.png"
+                media="(min-width: 900px)"
+              />
+              <img src="./img/sp/reason__img1.png" alt="" />
+            </picture>
+            <div class="reason__body">
+              <h3 class="reason__title">水道水を注ぐだけ</h3>
+              <p class="reason__text">
+                付属のタンクに水道水を注いでスイッチを入れるだけ！自宅でたっぷり5リットル（コップ約25杯分）のナノバブル水素水をつくれます。
+              </p>
+            </div>
+          </div>
+          <div class="reason__item">
+            <picture>
+              <source
+                srcset="./img/reason__img2.png"
+                media="(min-width: 900px)"
+              />
+              <img src="./img/sp/reason__img2.png" alt="" />
+            </picture>
+            <div class="reason__body">
+              <h3 class="reason__title">超省エネ設計で経済的</h3>
+              <p class="reason__text">
+                必要なときにナノバブル水素水を生成するため、電気代は月々約30円と省エネ設計。月1,000円程度の電気代がかかるウォーターサーバーと比較すると1/30のコストで済みます。
+              </p>
+            </div>
+          </div>
+          <div class="reason__item">
+            <picture>
+              <source
+                srcset="./img/reason__img3.png"
+                media="(min-width: 900px)"
+              />
+              <img src="./img/sp/reason__img3.png" alt="" />
+            </picture>
+            <div class="reason__body">
+              <h3 class="reason__title">コンパクトサイズ</h3>
+              <p class="reason__text">
+                直径30cm程度でコンパクトだから置き場所も自由自在！コンセントのある場所であれば、キッチンやダイニングなどお好きな場所に設置いただけます。
+              </p>
+            </div>
+          </div>
+          <div class="reason__item">
+            <picture>
+              <source
+                srcset="./img/reason__img4.png"
+                media="(min-width: 900px)"
+              />
+              <img src="./img/sp/reason__img4.png" alt="" />
+            </picture>
+            <div class="reason__body">
+              <h3 class="reason__title">環境に優しい</h3>
+              <p class="reason__text">
+                SUIREX5をご利用いただくことで、年間約3,600本分ものペットボトルを削減でき、年間350㎏の温暖化ガス削減効果があります。
+              </p>
+            </div>
+          </div>
+          <div class="reason__item">
+            <picture>
+              <source
+                srcset="./img/reason__img5.png"
+                media="(min-width: 900px)"
+              />
+              <img src="./img/sp/reason__img5.png" alt="" />
+            </picture>
+            <div class="reason__body">
+              <h3 class="reason__title">設置工事不要</h3>
+              <p class="reason__text">
+                設置時間も工事費も不要で経済的！<br />
+                プラグをコンセントに差し込むだけで届いたその日からどこでも、すぐにご使用いただけます。
+              </p>
+            </div>
+          </div>
+          <div class="reason__item">
+            <picture>
+              <source
+                srcset="./img/reason__img6.png"
+                media="(min-width: 900px)"
+              />
+              <img src="./img/sp/reason__img6.png" alt="" />
+            </picture>
+            <div class="reason__body">
+              <h3 class="reason__title">簡単メンテナンス</h3>
+              <p class="reason__text">
+                毎日のお手入れ不要！電極部など全ての部品がみえていますので、お手入れの際も簡単衛生的に行えます！
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- solution2 -->
+    <section class="solution2">
+      <div class="solution__inner2">
+        <div class="solution__wrapper2">
+          <h2 class="solution__title2">
+            ナノバブル水素水の有用性や<br class="pc-hidden" />
+            新たな可能性を開拓
+          </h2>
+          <p class="solution__text2">国内の大学や研究機関との共同研究の一例</p>
+          <!-- 左の吹き出し -->
+          <div class="balloon__wrapper">
+            <div class="balloon-chat left">
+              <figure class="icon-img">
+                <img src="./img/solition-icon3.png" alt="" />
+              </figure>
+              <div class="chatting chatting01">
+                <p class="chat-text">
+                  ナノバブル水素水に大腸菌、黄色ブドウ球菌を24時間培養。<br />
+                  <span>大腸菌を99.8％減少、黄色ブドウ球菌は99.6％減少</span>
+                  するなどの<br />
+                  <span>除菌効果</span>が見られました。
+                </p>
+              </div>
+            </div>
+            <!-- 右の吹き出し -->
+            <div class="balloon-chat right">
+              <figure class="icon-img">
+                <img src="./img/solition-icon4.png" alt="" />
+              </figure>
+              <div class="chatting">
+                <p class="chat-text">
+                  ナノバブル水素水を肌に塗布することで、シミのもととなる<br
+                    class="sp-hidden"
+                  />
+                  <span>メラニンを生成する酵素を抑制する効果</span
+                  >が確認されました。
+                </p>
+              </div>
+            </div>
+            <!-- 左の吹き出し -->
+            <div class="balloon-chat left">
+              <figure class="icon-img icon-img03">
+                <img src="./img/solition-icon3.png" alt="" />
+              </figure>
+              <div class="chatting chatting03">
+                <p class="chat-text">
+                  ヒト細胞内にナノバブル水素水と活性酸素（過酸化水素）を同時に添<br
+                    class="sp-hidden"
+                  />加する試験で、<span>細胞内の活性酸素が減少する効果</span>
+                  が確認されました。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="banner">
+      <div class="banner__inner">
+        <picture>
+          <source srcset="./img/banner-bg.png" media="(min-width: 900px)" />
+          <img src="./img/sp/banner-bg.png" alt="" />
+        </picture>
+      </div>
+    </div>
+
+    <!-- comparison -->
+    <section class="comparison">
+      <div class="comparison__inner">
+        <h2 class="section__title">他のお水との比較</h2>
+        <div class="comparison__wrapper js-scrollable">
+          <table class="comparison__table">
+            <thead>
+              <tr>
+                <th class="comparison__space"></th>
+                <div class="comparison__image">
+                  <th class="comparison__logo">
+                    <img
+                      src="./img/comparison-logo.png"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </th>
+                </div>
+                <th>ペットボトル</th>
+                <th>ウォーターサーバー</th>
+                <th>
+                  浄水器<br />
+                  (蛇口貯血型)
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="comparison__bg">電気代</td>
+                <td class="comparison__bold comparison__top">30円</td>
+                <td>不要</td>
+                <td>1,000円</td>
+                <td>0円</td>
+              </tr>
+              <tr>
+                <td class="comparison__bg">メンテナス費用</td>
+                <td class="comparison__bold">不要</td>
+                <td>不要</td>
+                <td>月一回</td>
+                <td>
+                  2〜4ヶ月で<br />
+                  フィルターを交換
+                </td>
+              </tr>
+              <tr>
+                <td class="comparison__bg">水道料金</td>
+                <td class="comparison__bold">約25円/月</td>
+                <td>3,000/月〜</td>
+                <td>3,000/月〜</td>
+                <td>約25円/月</td>
+              </tr>
+              <tr>
+                <td class="comparison__bg">解約のしやすさ</td>
+                <td class="comparison__bold">いつでも可能</td>
+                <td>不要</td>
+                <td>定期契約</td>
+                <td>不要</td>
+              </tr>
+              <tr>
+                <td class="comparison__bg">健康志向</td>
+                <td class="comparison__bold comparison__bottom">◎</td>
+                <td>◯</td>
+                <td>不要</td>
+                <td>△</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- cta -->
+    <div class="cta">
+      <picture class="cta__img">
+        <source srcset="./img/cta-img.png" media="(min-width: 900px)" />
+        <img src="./img/sp/cta-img.png" alt="" />
+      </picture>
+    </div>
+
+    <!-- slider -->
+    <section class="slider3">
+      <div class="slider3__inner">
+        <h2 class="section__title">お客様の声</h2>
+        <div class="slider3__slider">
+          <div id="js-slider3-swiper" class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider3-card">
+                  <div class="slider3-card__img">
+                    <img src="./img/slider3-card__img1.png" alt="" />
+                  </div>
+                  <div class="slider3-body">
+                    <h3 class="slider3-card__title">
+                      子供にはいい水を飲ませたい。だからSUISOPOTを使用。
+                    </h3>
+                    <div class="slider3-card__text js-slider3-text">
+                      <p>
+                        子供が産まれてからは子供が口にするものをすごく考えるようになりました。
+                        例え親が水道水を飲んでいても、息子にだけにはいいものを食べさせたり飲ませたりします（笑）
+                        子供にはずっと笑っていて欲しいですからね。
+                      </p>
+                    </div>
+                    <div class="slider3-card__bottom js-slider3-toggle">
+                      <p class="slider3-card__name">T様 （東京都 40代）</p>
+                      <div class="slider3-card__arrow">
+                        <img
+                          src="./img/slider-btn.png"
+                          alt=""
+                          class="js-slider3-icon"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider3-card">
+                  <div class="slider3-card__img">
+                    <img src="./img/slider3-card__img2.png" alt="" />
+                  </div>
+                  <div class="slider3-body">
+                    <h3 class="slider3-card__title">
+                      ナノバブル水素水が飲み放題なマシンです。
+                    </h3>
+                    <div class="slider3-card__text js-slider3-text">
+                      <p>
+                        本体に水道水を注ぐだけで小さな泡を含んだナノバブル水素水がつくり放題だという点に興味を持ちました。
+                      </p>
+                    </div>
+                    <div class="slider3-card__bottom js-slider3-toggle">
+                      <p class="slider3-card__name">田中菜々子様</p>
+                      <div class="slider3-card__arrow">
+                        <img
+                          src="./img/slider-btn.png"
+                          alt=""
+                          class="js-slider3-icon"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider3-card">
+                  <div class="slider3-card__img">
+                    <img src="./img/slider3-card__img3.png" alt="" />
+                  </div>
+                  <div class="slider3-body">
+                    <h3 class="slider3-card__title">
+                      毎日の生活には、SUISOPOTのお水は欠かせません
+                    </h3>
+                    <div class="slider3-card__text js-slider3-text">
+                      <p>
+                        SUISOPOTを使用して約3年です。
+                        毎日SUISOPOTのお水を飲んだけでなく、化粧水代わりにお肌にスプレーをするなど大活躍です。
+                        重いペットボトルの水を買わなくて済む点も嬉しいです。
+                      </p>
+                    </div>
+                    <div class="slider3-card__bottom js-slider3-toggle">
+                      <p class="slider3-card__name">Y様 （東京都 80代）</p>
+                      <div class="slider3-card__arrow">
+                        <img
+                          src="./img/slider-btn.png"
+                          alt=""
+                          class="js-slider3-icon"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider3-card">
+                  <div class="slider3-card__img">
+                    <img src="./img/slider3-card__img4.png" alt="" />
+                  </div>
+                  <div class="slider3-body">
+                    <h3 class="slider3-card__title">
+                      家族の健康のために。毎日飲む水はやはり身体に良いものじゃないと。
+                    </h3>
+                    <div class="slider3-card__text js-slider3-text">
+                      <p>
+                        毎朝起きて最初に飲むのがSUISOPOTでできたナノバブル水素水です。
+                        自宅の水道水だけで簡単につくれるのもいいですね。
+                      </p>
+                    </div>
+                    <div class="slider3-card__bottom js-slider3-toggle">
+                      <p class="slider3-card__name">杉本健太郎様</p>
+                      <div class="slider3-card__arrow">
+                        <img
+                          src="./img/slider-btn.png"
+                          alt=""
+                          class="js-slider3-icon"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider3-card">
+                  <div class="slider3-card__img">
+                    <img src="./img/slider3-card__img5.png" alt="" />
+                  </div>
+                  <div class="slider3-body">
+                    <h3 class="slider3-card__title">
+                      毎日お腹スッキリ！身体も軽やかになりました。
+                    </h3>
+                    <div class="slider3-card__text js-slider3-text">
+                      <p>
+                        口当たりがまろやかで、毎日家族みんなでゴクゴク飲んでいます。やっぱり家族が毎日飲むお水にはしっかりとこだわりたいですね。
+                      </p>
+                    </div>
+                    <div class="slider3-card__bottom js-slider3-toggle">
+                      <p class="slider3-card__name">H様（千葉県 40代）</p>
+                      <div class="slider3-card__arrow">
+                        <img
+                          src="./img/slider-btn.png"
+                          alt=""
+                          class="js-slider3-icon"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider3-card">
+                  <div class="slider3-card__img">
+                    <img src="./img/slider3-card__img6.png" alt="" />
+                  </div>
+                  <div class="slider3-body">
+                    <h3 class="slider3-card__title">
+                      SUIREX5は健康維持の頼もしいパートナーです。
+                    </h3>
+                    <div class="slider3-card__text js-slider3-text">
+                      <p>
+                        もともと小型の浄水器を使用していましたが、より健康を意識して探していたところ「SUISOPOT」に出会いました。
+                        そのまま飲むだけでなく、お茶やコーヒー、野菜の洗浄など1台で何役もこなしてくれるのも「SUISOPOT」の魅力です。
+                      </p>
+                    </div>
+                    <div class="slider3-card__bottom js-slider3-toggle">
+                      <p class="slider3-card__name">H様（神奈川県 40代）</p>
+                      <div class="slider3-card__arrow">
+                        <img
+                          src="./img/slider-btn.png"
+                          alt=""
+                          class="js-slider3-icon"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider3-card">
+                  <div class="slider3-card__img">
+                    <img src="./img/slider3-card__img7.png" alt="" />
+                  </div>
+                  <div class="slider3-body">
+                    <h3 class="slider3-card__title">
+                      水の舌触りが柔らかく、市販のミネラルウォーターと比べても味が美味しい。
+                    </h3>
+                    <div class="slider3-card__text js-slider3-text">
+                      <p>
+                        健康診断をきっかけにナノバブル水素水の｢SUISOPOT｣を導入しました。
+                        水を注ぐだけで水素水を作ることができる点が決め手でした。飲んでみてびっくり。
+                        水の舌触りが柔らかく、市販のミネラルウォーターと比べても味が美味しかったのでずっと愛用しています。
+                      </p>
+                    </div>
+                    <div class="slider3-card__bottom js-slider3-toggle">
+                      <p class="slider3-card__name">O様（福岡県 30代）</p>
+                      <div class="slider3-card__arrow">
+                        <img
+                          src="./img/slider-btn.png"
+                          alt=""
+                          class="js-slider3-icon"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider3-card">
+                  <div class="slider3-card__img">
+                    <img src="./img/slider3-card__img8.png" alt="" />
+                  </div>
+                  <div class="slider3-body">
+                    <h3 class="slider3-card__title">
+                      最近はおうちで簡単に水素水を作っています
+                    </h3>
+                    <div class="slider3-card__text js-slider3-text">
+                      <p>
+                        「子供の健康のために・・」いろいろと探してSUISOPOTにたどり着きました！
+                        水道水を注ぐだけという手軽さも便利ですし、コンパクトなので置き場所が自由自在というものうれしいです。
+                      </p>
+                    </div>
+                    <div class="slider3-card__bottom js-slider3-toggle">
+                      <p class="slider3-card__name">長谷川直也様</p>
+                      <div class="slider3-card__arrow">
+                        <img
+                          src="./img/slider-btn.png"
+                          alt=""
+                          class="js-slider3-icon"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider3-card">
+                  <div class="slider3-card__img">
+                    <img src="./img/slider3-card__img9.png" alt="" />
+                  </div>
+                  <div class="slider3-body">
+                    <h3 class="slider3-card__title">
+                      家族全員でナノバブル水素水はじめました！
+                    </h3>
+                    <div class="slider3-card__text js-slider3-text">
+                      <p>
+                        健康のことを考えて我が家では全員このナノバブル水素水を飲んでいますね。
+                        ミネラル分が豊富な点も気に入っています。
+                        キッチンにおいておけば料理にもさっと使えるのでありがたいです。
+                      </p>
+                    </div>
+                    <div class="slider3-card__bottom js-slider3-toggle">
+                      <p class="slider3-card__name">稲垣遥様</p>
+                      <div class="slider3-card__arrow">
+                        <img
+                          src="./img/slider-btn.png"
+                          alt=""
+                          class="js-slider3-icon"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider3__btn">
+            <div
+              id="js-slider3-pagination"
+              class="swiper-pagination slider3__pagination"
+            ></div>
+            <div
+              id="js-slider3-prev"
+              class="swiper-button-prev slider3__prev"
+            ></div>
+            <div
+              id="js-slider3-next"
+              class="swiper-button-next slider3__next"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- three-step -->
+    <section class="three-step">
+      <div class="three-step__inner">
+        <h2 class="section__title">ご利用までの3ステップ</h2>
+        <div class="three-step__items">
+          <div class="three-step__item">
+            <p class="three-step__lead">たったの５分で完結！</p>
+            <div class="three-step__img">
+              <img src="./img/three-step__img1.png" loading="lazy" alt="" />
+            </div>
+            <div class="three-step__body">
+              <p class="three-step__lead-sp">たったの５分で完結！</p>
+              <h3 class="three-step__title">お申込</h3>
+              <p class="three-step__text">
+                ネットもしくはお電話からお申し込みいただけます
+              </p>
+            </div>
+          </div>
+          <div class="three-step__item">
+            <p class="three-step__lead">早い！</p>
+            <div class="three-step__img">
+              <img src="./img/three-step__img2.png" loading="lazy" alt="" />
+            </div>
+            <div class="three-step__body">
+              <p class="three-step__lead-sp">早い！</p>
+              <h3 class="three-step__title">ご自宅に届きます</h3>
+              <p class="three-step__text">
+                お申込から通常1～3営業日にて製品が発送されます。
+              </p>
+            </div>
+          </div>
+          <div class="three-step__item">
+            <p class="three-step__lead">すぐ使える！</p>
+            <div class="three-step__img">
+              <img src="./img/three-step__img3.png" loading="lazy" alt="" />
+            </div>
+            <div class="three-step__body">
+              <p class="three-step__lead-sp">すぐ使える！</p>
+              <h3 class="three-step__title">ご利用開始</h3>
+              <p class="three-step__text">ご自身で簡単に設置可能</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <picture>
+      <source srcset="./img/four-step__bg.png" media="(min-width: 900px)" />
+      <img src="./img/sp/four-step__bg.png" alt="" />
+    </picture>
+
+    <!-- four-step -->
+    <section class="four-step">
+      <div class="four-step__inner">
+        <h2 class="section__title">簡単準備4ステップ</h2>
+        <div class="four-step__items">
+          <div class="four-step__item">
+            <p class="four-step__lead">挿すだけ！</p>
+            <div class="four-step__img">
+              <img src="./img/four-step__img1.png" loading="lazy" alt="" />
+            </div>
+            <div class="four-step__body">
+              <p class="four-step__lead-sp">挿すだけ！</p>
+              <h3 class="four-step__title">電源をとる</h3>
+              <p class="four-step__text">コンセントを挿します</p>
+            </div>
+          </div>
+          <div class="four-step__item">
+            <p class="four-step__lead">入れるだけ！</p>
+            <div class="four-step__img">
+              <img src="./img/four-step__img2.png" loading="lazy" alt="" />
+            </div>
+            <div class="four-step__body">
+              <p class="four-step__lead-sp">入れるだけ！</p>
+              <h3 class="four-step__title">タンクに水を入れる</h3>
+              <p class="four-step__text">
+                水道水を入れます<br />
+                1回に5ℓまで生成できます
+              </p>
+            </div>
+          </div>
+          <div class="four-step__item">
+            <p class="four-step__lead">押すだけ！</p>
+            <div class="four-step__img">
+              <img src="./img/four-step__img3.png" loading="lazy" alt="" />
+            </div>
+            <div class="four-step__body">
+              <p class="four-step__lead-sp">押すだけ！</p>
+              <h3 class="four-step__title">ボタンを押す</h3>
+              <p class="four-step__text">
+                還元時間を設定し<br class="sp-hidden" />
+                スタートボタンを押すだけ
+              </p>
+            </div>
+          </div>
+          <div class="four-step__item">
+            <p class="four-step__lead">「ピッ」となったら完成！</p>
+            <div class="four-step__img">
+              <img src="./img/four-step__img4.png" loading="lazy" alt="" />
+            </div>
+            <div class="four-step__body">
+              <p class="four-step__lead-sp">「ピッ」となったら完成！</p>
+              <h3 class="four-step__title">完成</h3>
+              <p class="four-step__text">
+                還元完了時は音と<br />
+                停止ランプでお知らせ
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <picture>
+      <source srcset="./img/four-step__bg2.png" media="(min-width: 900px)" />
+      <img src="./img/sp/four-step__bg2.png" alt="" />
+    </picture>
+
+    <!-- video -->
+    <div class="video">
+      <div class="video__inner">
+        <div class="video__wrapper">
+          <div class="video__contents">
+            <div class="video__left">
+              <img src="./img/video-img1.png" loading="lazy" alt="" />
+            </div>
+            <div class="video__right">
+              <span class="video__right-img"> </span>
+              <span class="video__right-text">詳しいご使用方法</span>
+            </div>
+          </div>
+          <div class="video__contents">
+            <div class="video__left">
+              <img src="./img/video-img2.png" loading="lazy" alt="" />
+            </div>
+            <div class="video__right">
+              <span class="video__right-img video__right-img2"> </span>
+              <span class="video__right-text">詳しいお手入れ方法</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <picture>
+      <source srcset="./img/labo-bg1.png" media="(min-width: 900px)" />
+      <img src="./img/sp/labo-bg1.png" alt="" />
+    </picture>
+
+    <!-- labo -->
+    <section class="labo">
+      <div class="labo__inner">
+        <h2 class="section__title2">
+          <span class="section__title-main">ナノバブルLabo</span>
+          <span class="section__title-sub"
+            >健康な暮らしのためのナノバブルとお水に関する情報サイト</span
+          >
+        </h2>
+        <div class="labo__items">
+          <div class="labo__item">
+            <img src="./img/labo-img1.png" loading="lazy" alt="" />
+          </div>
+          <div class="labo__item">
+            <img src="./img/labo-img2.png" loading="lazy" alt="" />
+          </div>
+          <div class="labo__item">
+            <img src="./img/labo-img3.png" loading="lazy" alt="" />
+          </div>
+        </div>
+        <div class="labo__link">
+          <a href="#">ナノバブルLaboをもっと見る</a>
+        </div>
+      </div>
+    </section>
+
+    <picture>
+      <source srcset="./img/labo-bg2.png" media="(min-width: 900px)" />
+      <img src="./img/sp/labo-bg2.png" alt="" />
+    </picture>
+
+    <!-- qa -->
+    <section class="qa">
+      <div class="qa__inner inner">
+        <h2 class="section__title">よくある質問</h2>
+        <div class="qa__items">
+          <div class="qa__item">
+            <div class="qa__box">
+              <div class="qa__box-q">
+                利⽤料⾦について教えてください
+                <div class="qa__box-icon"></div>
+              </div>
+              <div class="qa__box-a">
+                <div class="qa__box-content">
+                  SUISOPOT（スイソポット）のご利⽤には以下の料⾦がかかります。<br />
+                  ⽉額利⽤料：3,800円（税込）<br
+                    class="pc-hidden"
+                  />初期手数料：5,000円（税込）<br />
+                  送料：無料上記以外の料⾦は⼀切かかりません。
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="qa__item">
+            <div class="qa__box">
+              <div class="qa__box-q qa__box-q2">
+                申し込んでから、いつ届きますか？
+                <div class="qa__box-icon"></div>
+              </div>
+              <div class="qa__box-a">
+                <div class="qa__box-content">
+                  最短でお申し込み日の1～3営業日以内の出荷となります。<br />
+                  配送地域や交通状況によりお届けが遅れる場合もございます。
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="qa__item">
+            <div class="qa__box">
+              <div class="qa__box-q qa__box-q3">
+                支払い方法には何がありますか？
+                <div class="qa__box-icon"></div>
+              </div>
+              <div class="qa__box-a">
+                <div class="qa__box-content">
+                  下記の2つからお選びいただけます。<br />
+                  ・クレジットカード<br class="pc-hidden" />（VISA/JCB/Master
+                  Card）<br class="pc-hidden" />・銀行口座引落し
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="qa__item">
+            <div class="qa__box">
+              <div class="qa__box-q qa__box-q4">
+                更新日はどのようなサイクルになりますか？
+                <div class="qa__box-icon"></div>
+              </div>
+              <div class="qa__box-a">
+                <div class="qa__box-content">
+                  お申込日を起算日として、毎月お申込日と同じ日付が更新日となります。<br />
+                  （例：1月23日申込の場合、次回更新が2月23日となります。）
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="qa__item">
+            <div class="qa__box">
+              <div class="qa__box-q qa__box-q5">
+                途中で解約したいのですが費用はかかりますか？
+                <div class="qa__box-icon"></div>
+              </div>
+              <div class="qa__box-a">
+                <div class="qa__box-content">
+                  解約手数料は不要です。<br />
+                  解約ご希望日の1ヶ月前迄に解約申請をお願いします。
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="qa__item">
+            <div class="qa__box">
+              <div class="qa__box-q qa__box-q6">
+                マイクロバブルとナノバブルの違いは？
+                <div class="qa__box-icon"></div>
+              </div>
+              <div class="qa__box-a">
+                <div class="qa__box-content">
+                  マイクロバブルとは直径約1～50µm以下の小さな泡のことで、ナノバブルは0.1µm以下の目に見えない超微細な泡となります。マイクロバブルはすぐに弾けて消えてしまいますが、ナノバブルは1ヶ月以上も泡のまま残留できるといった特徴があります。
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="qa__item">
+            <div class="qa__box">
+              <div class="qa__box-q qa__box-q7">
+                ナノバブルはなぜカラダにいいの？
+                <div class="qa__box-icon"></div>
+              </div>
+              <div class="qa__box-a">
+                <div class="qa__box-content">
+                  ナノバブル水素水は浸透力に優れ、カラダのすみずみまでナノバブル水素と酸素を届けます。また、通常のお水は酸化しているのに対して、SUISOPOTで生成したナノバブル水素水は抗酸化力が高く、カラダの酸化を防ぎます。
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="qa__item">
+            <div class="qa__box">
+              <div class="qa__box-q qa__box-q8">
+                タンクの容量はどのくらいですか？
+                <div class="qa__box-icon"></div>
+              </div>
+              <div class="qa__box-a">
+                <div class="qa__box-content">
+                  タンク容量は5リットルです。
+                  コップ約25杯分を作ることができますので、たっぷりお使いいただけます。
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="qa__item">
+            <div class="qa__box">
+              <div class="qa__box-q qa__box-q9">
+                本当に使い放題ですか？
+                <div class="qa__box-icon"></div>
+              </div>
+              <div class="qa__box-a">
+                <div class="qa__box-content">
+                  はい、水道水を注ぐだけでお好きなだけご利用いただけます。
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="qa__item">
+            <div class="qa__box">
+              <div class="qa__box-q qa__box-q10">
+                お手入れは必要ですか？
+                <div class="qa__box-icon"></div>
+              </div>
+              <div class="qa__box-a">
+                <div class="qa__box-content">
+                  フィルター交換は不要です。グランド電極にイオン化したミネラルが付着する場合がありますので、その際はポット洗浄剤やクエン酸で洗浄してください。また、付属のミネラルプレートも定期的に洗浄してください。詳しくは取扱説明書をご覧ください。また使用方法、お手入れ方法の動画でもご確認いただけます。
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="qa__item">
+            <div class="qa__box">
+              <div class="qa__box-q qa__box-q11">
+                衛生面が気になります。
+                <div class="qa__box-icon"></div>
+              </div>
+              <div class="qa__box-a">
+                <div class="qa__box-content">
+                  タンク内は定期的に清掃いただくことをおすすめします。<br />
+                  生成されたナノバブル水素水は、2日以内にお飲みください。
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="qa__item">
+            <div class="qa__box">
+              <div class="qa__box-q qa__box-q12">
+                ミネラルプレートの交換サイクルは？
+                <div class="qa__box-icon"></div>
+              </div>
+              <div class="qa__box-a">
+                <div class="qa__box-content">
+                  ミネラルプレート1セットの交換サイクルは6ヶ月となり、製品お届け時は1年分（2セット）が同封されております。その後ご契約から1年経過毎に1年分（2セット）を無料にてお届けしますので、お客様ご自身でご交換をお願いします。
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="qa__item">
+            <div class="qa__box">
+              <div class="qa__box-q qa__box-q13">
+                どんな味ですか？
+                <div class="qa__box-icon"></div>
+              </div>
+              <div class="qa__box-a">
+                <div class="qa__box-content">
+                  付属のミネラルプレートからミネラルが微量に溶け出し、まろやかで角のとれた飲みやすい味です。
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="qa__item">
+            <div class="qa__box">
+              <div class="qa__box-q qa__box-q14">
+                病気や妊婦さんでも飲めますか？
+                <div class="qa__box-icon"></div>
+              </div>
+              <div class="qa__box-a">
+                <div class="qa__box-content">
+                  問題ありませんので、安心してお飲みください。<br />
+                  ご心配な方はかかりつけのお医者様にご相談ください。
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="qa__item">
+            <div class="qa__box">
+              <div class="qa__box-q qa__box-q15">
+                毎日どのくらい飲めばよいのでしょうか？？
+                <div class="qa__box-icon"></div>
+              </div>
+              <div class="qa__box-a">
+                <div class="qa__box-content">
+                  特に決まりはありませんが、一般的に1日
+                  1.5～2ℓの水分補給が健康に良いと言われております。
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="qa__item">
+            <div class="qa__box">
+              <div class="qa__box-q qa__box-q16">
+                飲み水以外で使っても平気ですか？
+                <div class="qa__box-icon"></div>
+              </div>
+              <div class="qa__box-a">
+                <div class="qa__box-content">
+                  はい、料理やコーヒー、紅茶、お酒の割り水、ペットの飲料水、生け花のお水、野菜の洗浄など様々な場面でご使用いただけます。
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <picture>
+      <source srcset="./img/guide-bg1.png" media="(min-width: 900px)" />
+      <img src="./img/sp/guide-bg1.png" alt="" />
+    </picture>
+
+    <!-- guide -->
+    <section class="guide">
+      <div class="guide__inner">
+        <h2 class="section__title">ご利用ガイド</h2>
+        <div class="guide__items">
+          <h3 class="guide__title">料金について</h3>
+          <p class="guide__text">
+            SUISOPOT（スイソポット）のご利用には以下の料金がかかります。
+          </p>
+          <ul class="guide__list">
+            <li class="guide__item">・初期手数料　5,000円</li>
+            <li class="guide__item">・月額利用料　3,800円</li>
+          </ul>
+        </div>
+        <div class="guide__items">
+          <h3 class="guide__title">送料について</h3>
+          <p class="guide__text">
+            生成器本体、ミネラルプレートのお届け時の送料は無料です。
+          </p>
+        </div>
+        <div class="guide__items">
+          <h3 class="guide__title">配送方法について</h3>
+          <p class="guide__text">
+            ご注文いただきました製品は、ヤマト運輸での発送とさせて頂いております。<br />
+            通常、お申込みから1～3営業日以内に製品出荷をいたします。交通状況や天候によってはご到着が遅れる場合もありますのでご了承くださいませ。
+          </p>
+        </div>
+        <div class="guide__items">
+          <h3 class="guide__title">お支払い方法について</h3>
+          <p class="guide__text">
+            インターネットからお申し込みの場合、「クレジットカード決済」のみとさせていただいております。<br />
+            銀行口座引き落としを希望される場合は、お電話での受付となりますので営業時間内に下記までご連絡ください。
+          </p>
+          <ul class="guide__list2">
+            <li class="guide__item2">カスタマーセンター</li>
+            <li class="guide__item2">TEL：03-1234-5678</li>
+            <li class="guide__item2">営業時間 9：00～17：00 （平日のみ）</li>
+          </ul>
+        </div>
+        <div class="guide__items">
+          <h3 class="guide__title">解約・交換について</h3>
+          <p class="guide__text">
+            ・解約について<br />
+            ご契約中でも、途中解約はご自由に行うことができます。解約をご希望される場合は、カスタマーセンターにご連絡ください。<br />
+            解約手数料は不要です。解約ご希望日の1ヶ月前迄に解約申請をお願いします。
+          </p>
+          <p class="guide__text guide__text2">
+            ・交換について<br />
+            万が一商品に不具合が発生した場合は、製品到着後速やかにカスタマーセンターにご連絡ください。<br />
+          </p>
+          <p class="guide__text guide__text3">
+            ※製品をお送りいただく送料につきましては、製品の瑕疵がある場合は当社が負担しますが、お客様のご都合による交換の場合は、お客様のご負担となります。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <picture>
+      <source srcset="./img/guide-bg2.png" media="(min-width: 900px)" />
+      <img src="./img/sp/guide-bg2.png" alt="" />
+    </picture>
+
+    <!-- news -->
+    <section class="news">
+      <div class="news__inner">
+        <h2 class="section__title">ニュース・メディア掲載実績</h2>
+        <div class="news__items">
+          <div class="news__item">
+            <a href="#" class="news__link">
+              <div class="news__meta">
+                <p class="news__time" datetime="2023.6.13">2023.6.13</p>
+                <p class="news__label">BLOG</p>
+              </div>
+              <h3 class="news__title">
+                還元水素水はペットに与えても良い？おすすめの商品もご紹介
+              </h3>
+            </a>
+          </div>
+          <div class="news__item">
+            <a href="#" class="news__link">
+              <div class="news__meta">
+                <p class="news__time" datetime="2023.6.13">2023.6.13</p>
+                <p class="news__label">NEWS</p>
+              </div>
+              <h3 class="news__title">
+                家庭用のレンタル水素水サーバーの選び方・おすすめランキング
+              </h3>
+            </a>
+          </div>
+          <div class="news__item">
+            <a href="#" class="news__link">
+              <div class="news__meta">
+                <p class="news__time" datetime="2023.6.02">2023.6.02</p>
+                <p class="news__label">NEWS</p>
+              </div>
+              <h3 class="news__title">
+                「ウォーターサーバー比較」で SUISOPOTが紹介されました。
+              </h3>
+            </a>
+          </div>
+          <div class="news__item">
+            <a href="#" class="news__link">
+              <div class="news__meta">
+                <p class="news__time" datetime="2023.6.01">2023.6.01</p>
+                <p class="news__label">NEWS</p>
+              </div>
+              <h3 class="news__title">
+                「ウォーターサーバー比較」でSUISOPOTが紹介されました。
+              </h3>
+            </a>
+          </div>
+        </div>
+        <div class="news__btn">
+          <a href="#">もっと見る</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- product -->
+    <section class="product">
+      <div class="product__inner">
+        <h2 class="section__title">製品仕様</h2>
+        <div class="product__wrapper">
+          <div class="product__left">
+            <img src="./img/product-img.png" loading="lazy" alt="" />
+          </div>
+          <div class="product__right">
+            <div class="product__items">
+              <p class="product__item-left">商品名</p>
+              <p class="product__item-right">SUISOPOT（スイソポット）</p>
+            </div>
+            <div class="product__items">
+              <p class="product__item-left">型番</p>
+              <p class="product__item-right">ＳＷ-800</p>
+            </div>
+            <div class="product__items">
+              <p class="product__item-left">サイズ</p>
+              <p class="product__item-right">約幅288×奥行356×高さ316(㎜)</p>
+            </div>
+            <div class="product__items">
+              <p class="product__item-left">本体質量</p>
+              <p class="product__item-right">約3.3kg</p>
+            </div>
+            <div class="product__items">
+              <p class="product__item-left">電源</p>
+              <p class="product__item-right">
+                AC/DCアダプター入力AC100V 50/60Hz 出力DC24V 0.7A
+              </p>
+            </div>
+            <div class="product__items">
+              <p class="product__item-left">生成モード</p>
+              <p class="product__item-right">60分　90分　120分</p>
+            </div>
+            <div class="product__items">
+              <p class="product__item-left">容量</p>
+              <p class="product__item-right">5リットル</p>
+            </div>
+            <div class="product__items">
+              <p class="product__item-left">使用する水質</p>
+              <p class="product__item-right">ミネラルウォーター、水道水</p>
+            </div>
+            <div class="product__items">
+              <p class="product__item-left">付属品</p>
+              <p class="product__item-right">
+                ミネラルプレート2個、ミネラルプレートケース2個、電極ホルダー2個
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <nav class="footer__nav">
+          <a href="#" class="footer__link">特長</a>
+          <a href="#" class="footer__link">お客様の声</a>
+          <a href="#" class="footer__link">ご利用料金</a>
+          <a href="#" class="footer__link">ご利用までの流れ</a>
+          <a href="#" class="footer__link">よくある質問</a>
+          <a href="#" class="footer__link footer__link2"
+            >特定商取引法に基づく表記</a
+          >
+        </nav>
+        <div class="footer__logo">
+          <img src="./img/footer-logo.png" loading="lazy" alt="" />
+        </div>
+        <p class="footer__text">
+          このサイトは株式会社コスモスエンタープライズ様のご協力のもと作成したコーディング用の練習課題です。<br />実在の人物・団体とは関係ありません。
+        </p>
+        <p class="footer__copy">
+          Copyright &copy;SUISO POT All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
